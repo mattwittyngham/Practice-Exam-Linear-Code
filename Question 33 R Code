@@ -1,0 +1,8 @@
+# Question 33
+v = c(2, -1, 5)
+u = c(1, 4, 1)
+# t is the projection
+t <- (v %*% u / u %*% u) %*% u
+# below is the magnitude. sum of the squares
+sqrt(sum(t^2))
+# Answer is 1 / sqrt(2)

@@ -1,0 +1,7 @@
+# Question 21
+v = c(5, -2, 3, 6)
+u = c(1, 2, 7, 3)
+# t is the projection
+t <- (v %*% u / u %*% u) %*% u
+# below is the magnitude. sum of the squares
+sqrt(sum(t^2))

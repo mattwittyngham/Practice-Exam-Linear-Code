@@ -1,0 +1,10 @@
+# Question 30 Copy-paste in R
+# If you haven't installed Matrixcalc in R start here. If not, skip to line 6
+install.packages("Matrixcalc")
+library(matrixcalc)
+# Start here
+A = matrix(c(.1, .4, .5, .5, .1, .4, .4, .5, .1), 3, 3)
+lower = lu.decomposition(A)$L
+upper = lu.decomposition(A)$U
+lower
+upper
